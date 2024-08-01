@@ -220,6 +220,12 @@ nav h1{
 .colm-3 h1{
   padding: 30px;
 }
+.colm-1 p{
+  padding: 10px;
+}
+.colm-3 p{
+  padding: 10px;
+}
 
 .dropbtn {
   background-color: #f7f7f7;
@@ -292,6 +298,24 @@ nav h1{
   margin: 20px;
   background-color: rgb(49, 44, 44);
   color: white;
+}
+.line-1 h1{
+  padding: 30px;
+}
+.line-2 h1{
+  padding: 30px;
+}
+.line-3 h1{
+  padding: 30px;
+}
+.line-1 p{
+  padding: 10px;
+}
+.line-2 p{
+  padding: 10px;
+}
+.line-3 p{
+  padding: 10px;
 }
 
 /* testemonial */
