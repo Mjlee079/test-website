@@ -1,0 +1,446 @@
+*{
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  font-style: none;
+  list-style: none;
+}
+
+/* nav */
+nav{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 13vh;
+}
+
+nav:hover{
+  background-color: black;
+  color: white;
+}
+nav h1{
+  font-size: 10vh;
+  padding: 0px 0 0 10vw;
+}
+
+.nav_icon{
+  padding: 25px 10vw 0 0vw;
+}
+
+.closemenu{
+  display: none;
+  cursor: pointer;
+  margin: -90px 0 0 14vw;
+}
+.openmenu{
+  cursor: pointer;
+  
+}
+
+.side-bar{
+  height: 100vh;
+  width: 75vw;
+  background-color: hsl(36, 100%, 99%);
+  float: right;
+  position: fixed;
+  z-index: 1;
+  transition: 0.5s;
+  right: -100%;
+  left: 100vw;
+  overflow-y: hidden;
+  box-shadow: 0px 15px 10px hsl(233, 8%, 79%);
+  flex-direction: column;
+}
+.side-bar ul{
+  padding: 90px 0 0 0;
+  margin: 40px;
+}
+
+.side-bar li{
+  margin: 50px 0 0 0;
+  font-size: 25px;
+  color: black;
+}
+
+.show{
+  left: 70vw;
+}
+/* main */
+
+
+.main{
+  background-color: rgb(92, 92, 95);
+  height: 87vh;
+  text-align: center;
+}
+.main h2{
+  padding: 20vh 0 0 0;
+}
+.main h1{
+  padding: 15px 0 0 0;
+  font-size: 3rem;
+}
+.main p{
+  padding: 10px 0 0 0;
+  font-size: 20px;
+}
+
+/* main */
+.titles{
+  background-color: rgb(237, 237, 253);
+  height: 100%;
+}
+
+.coloms-1{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.rows-1{
+  width: 50vw;
+  background-color: rgb(39, 36, 36);
+  height: 50vh;
+}
+
+.rows-2{
+  margin: 0 0 0 60px;
+  height: 50vh;
+}
+
+.head-1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.head-2{
+  padding: 30px 0 30px 5px;
+  font-size: 45px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.rows-2 p{
+  font-size: 20px;
+}
+
+.rows-2 button{
+  margin: 15px;
+  width: 8vw;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(39, 36, 36);
+  color: white;
+}
+
+.coloms-2{
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.row-2{
+  width: 50vw;
+  background-color: rgb(39, 36, 36);
+  height: 50vh;
+}
+
+.row-1{
+  margin: 0 0 0 60px;
+  height: 50vh;
+}
+
+.heads-1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.heads-2{
+  padding: 30px 0 30px 5px;
+  font-size: 45px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.row-1 p{
+  font-size: 20px;
+}
+
+.row-1 button{
+  margin: 15px;
+  width: 8vw;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(39, 36, 36);
+  color: white;
+}
+
+/* services */
+
+.services{
+  height: 100%;
+  background-color: rgb(126, 124, 124);
+}
+
+/* section-1 */
+.section-1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.colm-1{
+  width: 15vw;
+  height: 20vw;
+  margin: 20px;
+  margin:0 18vw 0 10vw;
+  background-color: rgb(49, 44, 44);
+  color: white;
+}
+.colm-2{
+  width: 30vw;
+  height: 20vw;
+  margin: 20px;
+  margin: 0;
+}
+.colm-3{
+  width: 15vw;
+  height: 20vw;
+  margin: 20px;
+  background-color: rgb(49, 44, 44);
+  color: white;
+}
+
+.colm-1 h1{
+  padding: 30px;
+}
+.colm-3 h1{
+  padding: 30px;
+}
+
+.dropbtn {
+  background-color: #f7f7f7;
+  color: black;
+  padding: 16px;
+  font-size: 25px;
+  cursor: pointer;
+  width: 20vw;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* section-2 */
+
+.section-2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  height: 100%;
+}
+.line-1{
+  width: 15vw;
+  height: 20vw;
+  margin: 20px;
+  margin:0 13vw 0 10vw;
+  background-color: rgb(49, 44, 44);
+  color: white;
+}
+.line-2{
+  width: 15vw;
+  height: 20vw;
+  margin: 20px;
+  margin: -30vh 35vh 0 15vh;
+  background-color: rgb(49, 44, 44);
+  color: white;
+}
+.line-3{
+  width: 15vw;
+  height: 20vw;
+  margin: 20px;
+  background-color: rgb(49, 44, 44);
+  color: white;
+}
+
+/* testemonial */
+
+.testemonial{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 35px;
+  height: 100%;
+  gap: 18vw;
+  background-color: rgb(237, 237, 253);
+}
+
+.cols-1{
+  width: 15vw;
+  height: 23vw;
+  margin: 20px 20px 20px 60px;
+  background-color: rgb(88, 86, 86);
+  color: white;
+}.cols-2{
+  width: 15vw;
+  height: 23vw;
+  margin: 20px;
+  background-color: rgb(88, 86, 86);
+  color: white;
+}
+.cols-3{
+  width: 15vw;
+  height: 23vw;
+  margin: 20px;
+  background-color: rgb(88, 86, 86);
+  color: white;
+}
+
+.cols-1 h1{
+  padding: 30px;
+}
+.cols-1 p{
+  padding: 10px;
+}
+.cols-1 button{
+  margin: 15px;
+  width: 8vw;
+  height: 30px;
+  font-size: 17px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.cols-2 h1{
+  padding: 30px;
+}
+.cols-2 p{
+  padding: 10px;
+}
+.cols-2 button{
+  margin: 15px;
+  width: 8vw;
+  height: 30px;
+  font-size: 17px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(21, 21, 21);
+}
+.cols-3 h1{
+  padding: 30px;
+}
+.cols-3 p{
+  padding: 10px;
+}
+.cols-3 button{
+  margin: 15px;
+  width: 8vw;
+  font-size: 17px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* footer */
+
+footer{
+  background-color: rgb(237, 237, 253);
+  height: 100vh;
+  padding: 40px;
+}
+
+.foot{
+  background-color: rgb(179, 179, 207);
+  width: 80vw;
+  height: 90vh;
+  margin: 0 0 0 18vh;
+}
+
+.fot-1{
+  width: 30vh;
+  height: 30vh;
+  background-color: white;
+  position: absolute;
+  margin: -60px 0 0 15vh;
+}
+.fot-2{
+  width: 30vh;
+  height: 30vh;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  margin:1vw 0 0 18vw;
+}
+.fot-3{
+  width:30vh;
+  height: 30vh;
+  background-color: white;
+  position: absolute;
+  margin: 5vw 0 0 30vw;
+}
+.fot-4{
+  width:30vh;
+  height: 30vh;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  margin: 10vw 0 0 42vw;
+}
+.fot-5{
+  width:30vh;
+  height: 30vh;
+  background-color: white;
+  position: absolute;
+  margin: 15vw 0 0 53vw;
+}
+.fot-6{
+  width:30vh;
+  height: 30vh;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  margin: 20vw 0 0 62vw;
+}
+.fot-7{
+  width:30vh;
+  height: 30vh;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  margin: 25vw 0 0 71vw;
+}
+.fot-8{
+  width:30vh;
+  height: 30vh;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  margin: 30vw 0 0 82vw;
+}
